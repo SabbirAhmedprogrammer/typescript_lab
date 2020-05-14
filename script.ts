@@ -23,7 +23,8 @@ const findNameOfTallestMountain = (mountains: Mountain[]): string | undefined =>
     })
     return tallestMountain.name
 }
-console.log(findNameOfTallestMountain(mountains))
+let theTallestMountain = findNameOfTallestMountain(mountains)
+console.log(theTallestMountain);
 
 //products
 
@@ -39,6 +40,7 @@ let products: Product[] = [
     { name: "toilet paper", price: 100 },
 ];
 
+//the array after this line, needs to be an array of objects where each object meets the criteria of the Product interface. 
 const calcAverageProductPrice = (array: Product[]): number => {
     let totalPrice = 0;
     array.forEach((element) => {
@@ -48,7 +50,8 @@ const calcAverageProductPrice = (array: Product[]): number => {
     return averagePrice
 
 };
-console.log(calcAverageProductPrice(products));
+let allProductAverage = calcAverageProductPrice(products);
+console.log(allProductAverage);
 
 //inventory
 
@@ -71,9 +74,9 @@ const calcInventoryValue = (array: InventoryItem[]): number => {
     })
     return totalPrice;
 }
-console.log(calcInventoryValue(inventory));
-let inventoryValue = calcInventoryValue(inventory);
 
+let inventoryValue = calcInventoryValue(inventory);
+console.log(inventoryValue);
 
 
 
